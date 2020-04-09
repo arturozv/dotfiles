@@ -34,3 +34,6 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/Users/avalse/Library/Python/2.7/bin
 export PATH=$PATH:/Users/avalse/Library/Python/3.7/bin
 export PATH=$PATH:/Users/avalse/.local/bin
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/avalse/.sdkman"
+[[ -s "/Users/avalse/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/avalse/.sdkman/bin/sdkman-init.sh"

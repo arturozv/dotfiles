@@ -1,7 +1,8 @@
 [user]
 	name = Arturo
-	email = Arturo.valsecchi@nike.com
+	email = arturo.valsecchi@nike.com
 [alias]
+	co = checkout 
 	st = status
 	ac = !git add -A && git commit -m
 	b = !git checkout -b
@@ -9,11 +10,12 @@
 	pullm = !git checkout master && git pull origin master
 	updatefork = !git fetch upstream && git checkout master && git rebase upstream/master
 [push]
-	default = simple
+	default = current
 [core]
 	editor = nano
 	preloadindex = true
 	pager = less -FRX
+	excludesfile = /Users/avalse/.gitignore_global
 [merge]
 	tool = diffmerge
 [mergetool "diffmerge"]
@@ -29,3 +31,13 @@
 	required = true
 [hub]
 	host = github.nike.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/avalse/.stCommitMsg
+[url "ssh://git@github.nike.com/"]
+	insteadOf = https://github.nike.com/
