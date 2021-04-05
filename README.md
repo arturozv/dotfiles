@@ -22,7 +22,7 @@ sudo apt-get install powerline fonts-powerline
 To Setup dotfiles, run
 
 ```
-git clone git@github.com:kyeotic/dotfiles.git
+git clone git@github.com:arturozv/dotfiles.git
 ./dotfiles/init.sh
 ```
 
