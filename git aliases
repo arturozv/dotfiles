@@ -1,7 +1,8 @@
 [alias]
 	st = status
+	co = checkout
 	ac = !git add -A && git commit -m
 	b = !git checkout -b
 	p = !git push origin
-	pullm = !git checkout master && git pull origin master
-	updatefork = !git fetch upstream && git checkout master && git rebase upstream/master
+	pm = !git checkout main && git pull origin main
+	updatefork = !git fetch upstream && git checkout main && git rebase upstream/main
